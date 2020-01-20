@@ -16,7 +16,7 @@ module.exports = {
 		author: '@johndoe',
 		twitterUsername: '@john_smilga',
 		image: '/defaultBcg.jpeg',
-		siteUrl: ''
+		siteUrl: 'https://backroads-brillful.netlify.com'
 	},
 
 	plugins: [
