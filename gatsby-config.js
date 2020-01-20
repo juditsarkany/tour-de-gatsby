@@ -14,9 +14,9 @@ module.exports = {
 		description:
 			'Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure',
 		author: '@johndoe',
-		twitterUsername: '@john_smilga',
+		twitterUsername: '@juditsarkanyy',
 		image: '/defaultBcg.jpeg',
-		siteUrl: 'https://backroads-brillful.netlify.com'
+		siteUrl: 'https://priceless-hawking-8e844a.netlify.com/'
 	},
 
 	plugins: [
