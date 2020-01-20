@@ -25,6 +25,15 @@ module.exports = {
 		`gatsby-plugin-sharp`,
 		`gatsby-plugin-transition-link`,
 		`gatsby-plugin-react-helmet`,
+		`gatsby-plugin-sitemap`,
+		{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+				host: 'https://priceless-hawking-8e844a.netlify.com/',
+				sitemap: 'hhttps://priceless-hawking-8e844a.netlify.com/sitemap.xml/',
+				policy: [ { userAgent: '*', allow: '/' } ]
+			}
+		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {

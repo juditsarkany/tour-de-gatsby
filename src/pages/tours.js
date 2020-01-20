@@ -1,29 +1,29 @@
-import React, { Component } from 'react'
-import Layout from '../components/Layout'
-import StyledHero from '../components/StyledHero'
-import { graphql } from 'gatsby'
-import Tours from '../components/Tours/Tours'
-
+import React, { Component } from 'react';
+import Layout from '../components/Layout';
+import StyledHero from '../components/StyledHero';
+import { graphql } from 'gatsby';
+import Tours from '../components/Tours/Tours';
+import SEO from '../components/SEO';
 export default class tours extends Component {
-    render() {
-        return (
-            <Layout>
-                <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} />
-                <Tours />
-            </Layout>
-        )
-    }
+	render() {
+		return (
+			<Layout>
+				<SEO title="Tours" />
+				<StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} />
+				<Tours />
+			</Layout>
+		);
+	}
 }
 
-export const query = graphql `
-    query {
-        defaultBcg: file(relativePath: {eq: "defaultBcg.jpeg"}) {
-            childImageSharp {
-                fluid(quality: 90 ,maxWidth: 4060) {
-                ...GatsbyImageSharpFluid_withWebp
-                }
-            }
-        }
-    }
-  
-`
+export const query = graphql`
+	query {
+		defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+			childImageSharp {
+				fluid(quality: 90, maxWidth: 4060) {
+					...GatsbyImageSharpFluid_withWebp
+				}
+			}
+		}
+	}
+`;
