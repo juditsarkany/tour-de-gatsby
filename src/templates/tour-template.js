@@ -70,7 +70,7 @@ export const query = graphql`
 				info
 			}
 			images {
-				fluid {
+				fluid(quality: 100) {
 					...GatsbyContentfulFluid
 				}
 			}

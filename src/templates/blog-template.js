@@ -15,7 +15,6 @@ const blog = ({ data }) => {
 			'embedded-asset-block': (node) => {
 				return (
 					<div className="rich">
-						<h3>this is awesome image</h3>
 						<img width="400" src={node.data.target.fields.file['en-US'].url} alt="featured" />
 					</div>
 				);
@@ -24,7 +23,6 @@ const blog = ({ data }) => {
 				const { name, images, description } = node.data.target.fields;
 				return (
 					<div>
-						<h1>this is other post: {name['en-US']}</h1>
 						<img src={images['en-US'][0].fields.file['en-US'].url} width="400" alt="" />
 						<p>{description['en-US']}</p>
 					</div>
