@@ -39,7 +39,7 @@ const blog = ({ data }) => {
 					<h4>published at :{published}</h4>
 					<Img fluid={image.fluid} />
 					<article className={styles.post}>{documentToReactComponents(json, options)}</article>
-					<AniLink fade to="/blog" className="btn-primary">
+					<AniLink fade to="/blogs" className="btn-primary">
 						all posts
 					</AniLink>
 				</div>
